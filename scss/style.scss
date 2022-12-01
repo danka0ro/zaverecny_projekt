@@ -1,11 +1,11 @@
-/* intuitivnejsi box-sizing */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+@use 'barvy';
+@use 'zaklad';
+@use 'hlavicka';
+@use 'menu';
+@use 'hlavni';
+@use 'paticka'
 
-body {
-	font-family: sans-serif;
-	font-size: 18px;
-}
+
 
 /* ------------------------------------- */
 

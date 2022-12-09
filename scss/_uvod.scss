@@ -1,0 +1,22 @@
+/*uvod-------------------------------------------*/
+
+
+.obsah {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: $c-main;
+	padding: 20px;
+}
+
+.logo {
+	background-image: url(/images/pekarna/uvod.jpg);
+	background-size: cover;
+	min-height: 300px;
+	padding: 10px;
+}
+
+.logo h1 {
+	font-size: 48px;
+	text-align: center;
+	color: white;
+}

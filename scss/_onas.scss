@@ -1,0 +1,16 @@
+/*ONAS*/
+
+.onas__text {
+	margin: 20px;
+}
+
+.onas__img {
+	margin: 20px;
+	border: 3px solid white;
+}
+
+@media screen and (min-width: 600px) {
+	.onas__odstavec {
+		display: flex;
+	}
+}

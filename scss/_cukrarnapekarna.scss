@@ -1,0 +1,25 @@
+/*NABIDKA CUKRARNA, PEKAKNA*/
+
+.vyrobek__img {
+	border: 3px solid white;
+	margin: 20px auto;
+}
+
+.vyrobek__text {
+	margin: 20px;
+}
+
+.vyrobek__nadpis,
+.vyrobek__popis,
+.vyrobek__text,
+.vyrobek__img {
+	display: block;
+	text-align: center;
+}
+
+
+@media screen and (min-width: 600px) {
+	.vyrobek__popis {
+		display: flex;
+	}
+}

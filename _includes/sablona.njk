@@ -8,31 +8,33 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
-    <div class="logo">Pekárna Krále Jiřího</div>
+    <div class="obsah">
 
-    <nav class="menu">
+        <div class="logo"><h1>Pekárna Krále Jiřího</h1></div>
 
-		<input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-		<label for="menu-checkbox" class="menu__toggler">☰</label>
+        <nav class="menu">
 
-		<ul class="menu__list">
-			<li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
-			<li class="menu__item"><a class="menu__link" href="/onas">O nás</a></li>
-			<li class="menu__item"><a class="menu__link" href="/nabidka">Nabídka</a></li>
-			<li class="menu__item"><a class="menu__link" href="/kontakt">Kontakt</a></li>
-		</ul>
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu__toggler">☰</label>
 
-	</nav>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
+                <li class="menu__item"><a class="menu__link" href="/onas">O nás</a></li>
+                <li class="menu__item"><a class="menu__link" href="/nabidka">Nabídka</a></li>
+                <li class="menu__item"><a class="menu__link" href="/kontakt">Kontakt</a></li>
+            </ul>
 
-    <main>
+        </nav>
 
-        {{ content | safe }}
+        <main>
 
-    </main>
+            {{ content | safe }}
 
-    <footer class="footer">
-        &copy;Pekárna Krále Jiřího
-    </footer>
+        </main>
+
+        <footer class="footer">
+            &copy;Pekárna Krále Jiřího
+        </footer>
+    </div>
 </body>
 </html>

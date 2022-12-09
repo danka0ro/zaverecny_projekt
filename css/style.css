@@ -1,66 +1,221 @@
-@charset "UTF-8";
 /* intuitivnejsi box-sizing */
-html {
-  box-sizing: border-box;
-}
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
 
 body {
-  font-family: sans-serif;
-  font-size: 18px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+/*
+$c-body: #FEFAE0;
+$c-obsah: #FAEDCD;
+$c-headerfooter: #D4A373;
+$c-active: #E9EDC9;
+$c-button: #CCD5AE;
+*/
+
+/*INDEX*/
+
+/*uvod-------------------------------------------*/
+
+
+.obsah {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #FAEDCD;
+	padding: 20px;
 }
 
-/* ------------------------------------- */
+.logo {
+	background-image: url(/images/pekarna/uvod.jpg);
+	background-size: cover;
+	min-height: 300px;
+	padding: 10px;
+}
+
+.logo h1 {
+	font-size: 48px;
+	text-align: center;
+	color: white;
+}
+/* menu------------------------------------- */
+
 .menu__checkbox {
-  position: absolute;
-  left: -9999px;
-  /*to samé jako display: none;*/
+	position: absolute;
+	left: -9999px;
+	/*to samé jako display: none;*/
 }
 
 .menu__toggler {
-  cursor: pointer;
+	cursor: pointer;
+	text-align: center;
+	margin: 20px;
 }
 
 .menu__list {
-  display: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: tomato;
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #CCD5AE;
 }
 
 .menu__item {
-  border-bottom: 1px solid white;
+	border-bottom: 1px solid white;
 }
 
 .menu__link {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
 }
 
 .menu__link:hover {
-  background-color: rgb(199, 67, 43);
+	background-color: #E9EDC9;
 }
 
-@media screen and (max-width: 799px) {
-  .menu__checkbox:checked ~ .menu__list {
-    display: block;
-  }
+@media screen and (max-width: 599px) {
+
+	.menu__checkbox:checked ~ .menu__list {
+		display: block;
+	}
 }
-@media screen and (min-width: 800px) {
-  .menu__toggler {
-    display: none;
-  }
-  .menu__list {
-    display: flex;
-  }
-  .menu__item {
-    border-bottom: 0;
-    border-right: 1px solid white;
-  }
-}/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 600px) {
+	
+	.menu__toggler {
+		display: none;
+	}
+
+	.menu__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	.menu__item {
+		border-bottom: 0;
+		border-right: 1px solid white;
+		border-left: 1px solid white;
+	}
+}
+/*main----------------------------------------------------*/
+.uvod__img {
+	width: 100%;
+	max-width: 200px;
+	border: 3px solid white;
+	margin: 20px;
+	text-align: center;
+}
+
+.uvod__odstavec {
+	padding: 10px;
+}
+
+@media screen and (min-width: 600px){
+
+	.uvod__galerie {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+}
+
+
+/*patička---------------------------------------------*/
+
+.footer {
+	padding: 20px;
+	background-color: #D4A373;
+	color: white;
+	text-align: center;
+}
+
+/*ONAS*/
+
+.onas__text {
+	margin: 20px;
+}
+
+.onas__img {
+	margin: 20px;
+	border: 3px solid white;
+}
+
+@media screen and (min-width: 600px) {
+	.onas__odstavec {
+		display: flex;
+	}
+}
+
+/*NABIDKA*/
+
+.nabidka__text {
+	text-align: center;
+	color: black;
+	margin: 20px;
+}
+
+.nabidka__img {
+	display: none;
+}
+
+@media screen and (min-width: 600px) {
+	.nabidka__flex {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	
+	.nabidka__img {
+		display: block;
+		text-align: center;
+		border: 3px solid white;
+		margin: 20px;
+	}
+}
+
+
+/*KONTAKT*/
+
+.kontakt__adresa {
+	margin: 20px;
+}
+
+.kontakt__img {
+	margin: 20px;
+	border: 3px solid white;
+}
+
+@media screen and (min-width: 600px) {
+	.kontakt__flex {
+		display: flex;
+	}
+}
+
+
+/*NABIDKA CUKRARNA, PEKAKNA*/
+
+.vyrobek__img {
+	border: 3px solid white;
+	margin: 20px auto;
+}
+
+.vyrobek__text {
+	margin: 20px;
+}
+
+.vyrobek__nadpis,
+.vyrobek__popis,
+.vyrobek__text,
+.vyrobek__img {
+	display: block;
+	text-align: center;
+}
+
+
+@media screen and (min-width: 600px) {
+	.vyrobek__popis {
+		display: flex;
+	}
+}

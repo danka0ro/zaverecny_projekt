@@ -195,19 +195,21 @@ $c-button: #CCD5AE;
 	}
 }
 
+/*
 .facebook,
 .instagram {
 	background-color: white;
 }
+*/
 
 .fb_img {
-	width:30px;
-	height: 30px;
+	width:100px;
+	height: 100px;
 }
 
 .ig_img {
-	width: 30px;
-	height: 30px;
+	width: 100px;
+	height: 100px;
 }
 
 

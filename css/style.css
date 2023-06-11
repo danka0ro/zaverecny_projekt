@@ -195,6 +195,9 @@ $c-button: #CCD5AE;
 	}
 }
 
+.socialnisite {
+	display: flex;
+}
 
 .fb_img {
 	width:100px;

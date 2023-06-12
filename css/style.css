@@ -197,6 +197,12 @@ $c-button: #CCD5AE;
 
 .socialnisite {
 	display: flex;
+	justify-content: space-evenly;
+}
+
+.facebook a,
+.instagram a {
+	color: black;
 }
 
 .fb_img {
